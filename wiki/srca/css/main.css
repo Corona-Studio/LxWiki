@@ -19,6 +19,9 @@
     overflow-x: clip;
     overflow-y: auto;
 }
+div.screo{
+    width: inherit !important;
+}
 .inv{
     display: none;
 }
