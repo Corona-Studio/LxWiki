@@ -77,7 +77,6 @@ a:active{
     text-decoration: none;
     color: orangered;
     border-bottom: 0.1rem solid var(--yellowa);
-
 }
 a:visited{
     color: orangered;
