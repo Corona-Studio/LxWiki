@@ -33,6 +33,15 @@
 .darke{
     background-color: rgb(49, 49, 38) !important;
 }
+.scr{
+    
+        width: 300px;
+        height: 100px;
+        overflow-y: scroll;
+        scrollbar-color: rgba(238, 199, 26, 0.87) rgb(207, 73, 33);
+        /* scrollbar-width:; */
+      
+}
 .aaa{
     vertical-align: bottom !important;
 }
