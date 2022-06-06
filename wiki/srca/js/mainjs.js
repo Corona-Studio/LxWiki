@@ -19,7 +19,7 @@ var status = false;//set the darkmode is or not on: true for on.
         localStorage.targo = target;
 
         clikn = document.getElementById(target);
-        lastClick.classList.remove(dnr);
+        if(lastClick!='undefined') { lastClick.classList.remove(dnr); }
         lastClick = clikn;
         clikn.classList.add(dnr);
 
