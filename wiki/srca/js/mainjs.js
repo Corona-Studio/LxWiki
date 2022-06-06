@@ -7,8 +7,9 @@ var status = false;//set the darkmode is or not on: true for on.
     var dnr = "text-orange-600";
     // var target = "welcome"
         function play(){
-            aaa.classList.add("inv");
-            setTimeout(function(){ifrm.classList.remove("inv");},750)
+            
+            setTimeout(function(){aaa.classList.add("inv");},950)
+            setTimeout(function(){ifrm.classList.remove("inv");},350)
 
         }
 
@@ -19,7 +20,9 @@ var status = false;//set the darkmode is or not on: true for on.
         localStorage.targo = target;
 
         clikn = document.getElementById(target);
-        if(lastClick!=null) { lastClick.classList.remove(dnr); }else{document.getElementById("welcome");}
+
+        if(lastClick!=null) { lastClick.classList.remove(dnr); } 
+        else {clikn = document.getElementById("welcome");} 
 
         lastClick = clikn;
         clikn.classList.add(dnr);
@@ -29,7 +32,7 @@ var status = false;//set the darkmode is or not on: true for on.
     }
     
     window.onload = function reload(){
-        if(localStorage.targo==undefined){
+        if(localStorage.targo==undefined || localStorage.targo==null){
             ctar('welcome')
         }else ctar(localStorage.targo);
         dmode();
