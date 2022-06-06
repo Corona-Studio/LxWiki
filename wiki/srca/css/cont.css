@@ -1,7 +1,7 @@
 :root{
     --yellowa: rgb(255, 197, 23);
-    --ordinary: 0.6rem;
-    --owd: 0.48rem;
+    --ordinary: 0.45rem;
+    --owd: 0.6rem;
     /* padding */
 }
 @import url(./allanim.css);
