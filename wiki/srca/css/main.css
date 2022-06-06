@@ -1,0 +1,52 @@
+@import url(./allanim.css);
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    
+    color: #111;
+}
+.inv{
+    display: none;
+}
+.blocki{
+    display: inline-block;
+}
+.parsee{
+    height: 5rem;
+}
+.spand{
+    margin-right: 1rem;
+}
+.plat{
+    margin-top: 0.5rem !important;
+}
+
+.divider{
+    height: 1px;
+    border: 1px gray solid;
+    border-radius: 0.25rem;
+}
+.lighte{
+    background-color: rgb(255, 250, 245);
+}
+.darke{
+    background-color: rgb(49, 49, 38) !important;
+}
+.aaa{
+    vertical-align: bottom !important;
+}
+.loader{
+    --col: rgba(238, 220, 59, 0.719);
+    --neg: #f3f3f3f3;
+    --arem: 3.3rem;
+    --brem: 0.5rem;
+    border:var(--brem) solid var(--col);
+    border-radius:50%;
+    border-right:var(--brem) solid var(--neg);
+    
+    width:var(--arem);
+    height:var(--arem);
+    /* animation-name:load; */
+    animation:load 2s linear infinite;
+}

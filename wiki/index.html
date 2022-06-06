@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LauncherX 帮助页面</title>
+    <link rel="stylesheet" href="./srca/css/main.css">
+    <link rel="stylesheet" href="./srca/css/twind.css">
+    
+    <link rel="shortcut icon" href="./srca/icon/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./srca/icon/icon.png" type="image/x-icon">
+    <!-- <link rel="" href=""> -->
+</head>
+<body class="dark:text-gray-100 lighte dark:bg-gray-800" id="mainin">
+    <div class="lg:h-10 md:h-9 sm:h-5"></div>
+    <div class="dark:text-gray-100 container grid grid-cols-12 mainctl grid-rows-6 mx-auto gap-5">
+        
+        <div class="dark:text-gray-100 col leftcolumn row-span-full col-span-3 mask sidelisto border-4 rounded border-yellow-200 dark:border-yellow-500 p-5">
+            <ul style="list-style: none;">
+                <li class="dark:bg-yellow-500 dark:border-yellow-500 dark:text-gray-100 bg-yellow-200 p-2.5 rounded my-1 aaa font-semibold text-xl"><img src="./srca/icon/icon.png" class="dark:text-gray-100 inline-block w-7 mb-1 ml-1 mr-1.5"> LauncherX 帮助页面
+                <br><div class="dark:text-gray-100 divider my-2"></div>
+                界面模式：
+                
+                <div onclick="button()" class="dark:text-gray-100 switch my-1 inline-block h-6 w-12  bg-gray-100 dark:bg-gray-700 border-2 border-gray-800 dark:border-gray-300 rounded-full float-right">
+                    <div class="inline-block bg-slate-600 dark:bg-slate-400 float-left dark:float-right leca h-5 w-5 rounded-full border-0" id="switch0"></div>
+                </div>
+                </li>
+                
+
+
+                <br>
+                <li id="welcome" class="dark:text-gray-100 border-yellow-400 p-3  border-2 rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('welcome')">欢迎！向你介绍LauncherX</li>
+                    <br>
+                <li id="starter" class=" dark:text-gray-100 border-yellow-400 p-3  border-2 rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('starter')">1 入门</li>
+
+                <li id="get" class="dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('get')">2 获取游戏</li>
+
+                <li id="set" class="dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('set')">3 配置游戏</li>
+
+                <li id="customize" class="dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('customize')">4 个性化</li>
+
+                <li id="mang" class="dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('mang')">5 管理资源</li>
+
+                <li id="add" class="dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('add')">6 补充</li>
+                
+            </ul>
+            <br>
+            <div class="dark:text-gray-100 divider plat border-yellow-200 dark:border-yellow-500"></div>
+            <br>
+            <div class="dark:text-gray-100 border-yellow-200 dark:border-yellow-500 p-3  border-2 plat rounded acti">
+                <button class="button">中文</button><button class="button">English</button><button class="button">Русский</button>
+                <!-- <ul class="float-left" style="float: left !important;">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul> -->
+            </div>
+            <br>
+            <div class="dark:text-gray-100 border-yellow-200 dark:border-yellow-500 p-3  border-2 plat rounded acti">
+                <h3 class="dark:text-gray-100 headT">更新日志</h3>
+                <p class="dark:text-gray-100"><span class="badge"></span></p>
+                <div class="dark:text-gray-100 divider my-3 border-yellow-200 dark:border-yellow-500"></div>
+                
+                <p class="dark:text-gray-100">由Corona Studio以及社区成员呈现<br>由Vanilla HTML5 构建<br>由Tailwind CSS排版</p>
+            </div>
+        </div>
+
+        <div class="rightdisplay col-span-9 row-span-full col border-4 rounded border-yellow-200 p-7">
+
+            <iframe name="i" src="./content/welcome.html" style="overflow-y: auto;" id="control" height="100%" width="100%" 
+            class="transition-all inv dark:text-gray-100"></iframe>
+
+        <div style="overflow-y: auto;" id="cload" height="100%" width="100%" 
+            class="dark:text-gray-100 transition-all">
+            <div class="my-5"></div>
+            <div class="animate-spin my-3 mx-auto loader bg-gradient-to-r" viewBox="0 0 24 24"></div>
+            <h2 class="dark:text-gray-100 text-center font-semibold my-3" style="font-size: xx-large;">正在载入...</h2>
+        </div>
+                <!-- ... -->
+              
+        </div>
+        
+            <h5 class="dark:text-gray-100 text-center col col-span-12 border-4 border-yellow-300 rounded py-3">FOoooooOOoter</h5>
+        <div class="my-6"></div>
+    </div>
+
+    <div class="my-12"></div>
+</body>
+<script src="./srca/js/mainjs.js"></script>
+</html>
