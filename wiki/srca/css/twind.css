@@ -613,6 +613,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.25rem;
 }
 
+.max-h-20 {
+  max-height: 5rem;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -652,6 +656,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-x-clip {
+  overflow-x: clip;
 }
 
 .rounded {
