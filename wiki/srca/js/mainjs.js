@@ -55,7 +55,7 @@
         if(localStorage.stadt == "act"){
             
         }else{
-            florem();
+            lorem();
             localStorage.stadt = "act";
         }
     }//aaaaaaaa
