@@ -34,7 +34,8 @@
 
         kont.src = to;
         brplay();
-        setTimeout(function(){florem();},150)
+        setTimeout(function(){florem();},150);
+        
         play();
         
 
@@ -47,9 +48,17 @@
         }else ctar(localStorage.targo);
 
         lorem();
-
+        adw();
         play();
     }
+    function adw(){
+        if(localStorage.stadt == "act"){
+            
+        }else{
+            florem();
+            localStorage.stadt = "act";
+        }
+    }//aaaaaaaa
 
     function lorem(){
         if(window.matchMedia('(prefers-color-scheme: dark)').matches){
