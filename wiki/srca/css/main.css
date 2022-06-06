@@ -1,3 +1,7 @@
+:root{
+    --yellowa: rgb(255, 197, 23);
+}
+
 @import url(./allanim.css);
 *{
     margin: 0;
@@ -21,6 +25,30 @@
 .plat{
     margin-top: 0.5rem !important;
 }
+a:link{
+    color: var(--yellowa);
+    text-decoration: none;
+}
+a:hover{
+    color:rgba(211, 147, 9, 0.815);
+    text-decoration: none;
+    border-bottom: 0.1rem solid var(--yellowa);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+    transition: all .1s ease;
+}
+a:active{
+    text-decoration: none;
+    color: orangered;
+    border-bottom: 0.1rem solid var(--yellowa);
+
+}
+a:visited{
+    color: orangered;
+    text-decoration: line-through var(--yellowa);
+
+}
 
 .divider{
     height: 1px;
@@ -32,6 +60,16 @@
 }
 .darke{
     background-color: rgb(49, 49, 38) !important;
+}
+.splider{
+    display: inline-block;
+    height: 1rem;
+    width: 0.03rem;
+    border: var(--yellowa) solid 0.12rem;
+    border-radius: 25%;
+    background-color: var(--yellowa);
+    margin: 0 0.5rem;
+    margin-bottom: 0.17rem;
 }
 .scr{
     
