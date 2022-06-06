@@ -1,10 +1,8 @@
 :root{
     --yellowa: rgb(255, 197, 23);
-}
-*{
-    margin: 0.58rem 0;
-    padding: 0;
-    font-family: nom !important;
+    --ordinary: 0.6rem;
+    --owd: 0.48rem;
+    /* padding */
 }
 @import url(./allanim.css);
 @font-face {
@@ -12,8 +10,16 @@
     src: url(./../../srca/font/lxgw.ttf);
 }
 
+*{
+    margin: 0.58rem 0;
+    padding: 0;
+    font-family: nom;
+}
+
 body{
     margin: 0.1rem 1.8rem !important;
+    font-family: nom;
+
 }
 .dark{
     color: rgb(255, 250, 245) !important;
@@ -30,16 +36,16 @@ h1{
     margin-bottom: 1.8rem;
 }
 h3{
-    border-left: 3px solid var(--yellowa);
-    padding-left: 0.56rem;
+    border-left: var(--ordinary) solid var(--yellowa);
+    padding-left: var(--owd);
     font-weight: bold;
     font-size: x-large;
     margin-bottom: 0.81rem;
 }
 h5{
-    border-left: 0.65rem var(--yellowa) dashed;
+    border-left: var(--ordinary) var(--yellowa) dashed;
     margin-top: 0.8rem;
-    padding-left: 0.35rem;
+    padding-left: var(--owd);
     font-size: larger;
     font-weight: bold;
 }
@@ -49,9 +55,9 @@ p{
     font-weight: bold;
 }
 h6{
-    border-left: 0.35rem dotted var(--yellowa);
+    border-left: var(--ordinary) dotted var(--yellowa);
     font-size: large;
-    padding-left: 2ch;
+    padding-left: var(--owd);
     margin-bottom: 0.2rem;
 }
 a:link{
