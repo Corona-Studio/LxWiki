@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LauncherX 帮助页面</title>
+    <!-- <link rel="stylesheet" href="./output.css"> -->
+
+    <link rel="stylesheet" href="./srca/css/main.css">
+    <link rel="stylesheet" href="./srca/css/twind.css">
+    <link rel="shortcut icon" href="./srca/icon/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./srca/icon/icon.png" type="image/x-icon">
+    <!-- <link rel="" href=""> -->
+</head>
+
+<body class="transition-all dark:text-gray-100 lighte dark:bg-gray-800 " id="mainin">
+    <div class="transition-all lg:h-10 md:h-9 sm:h-5"></div>
+    <div class="transition-all dark:text-gray-100 container grid grid-cols-12 mainctl grid-rows-6 mx-auto gap-5">
+        
+        <div class="transition-all dark:text-gray-100 col leftcolumn row-span-full col-span-3 mask sidelisto border-4 rounded border-yellow-200 dark:border-yellow-500 p-5">
+            <ul style="list-style: none;">
+                <li class="transition-all dark:bg-yellow-500 dark:border-yellow-500 dark:text-gray-100 bg-yellow-200 p-2.5 rounded my-1 aaa font-semibold text-xl"><img src="./srca/icon/icon.png" class="transition-all dark:text-gray-100 inline-block w-7 mb-1 ml-1 mr-1.5"> LauncherX 帮助页面
+                <br><div class="transition-all dark:text-gray-100 divider my-2"></div>
+                界面模式：
+                <div onclick="button()" class="transition-sl dark:text-gray-100 switch my-1 inline-block h-6 w-12  bg-gray-100 dark:bg-gray-700 border-2 border-gray-800 dark:border-gray-300 rounded-full float-right">
+                    <div class="transition-sl inline-block bg-slate-600 dark:bg-slate-400 float-left dark:float-right leca h-5 w-5 rounded-full border-0" id="switch0"></div>
+                </div>
+                <span style="vertical-align: middle;" class="transition-all float-right dark:text-gray-100 mb-1 mr-3 text-center bg-orange-400 w-16 px-1 border-2 font-normal rounded border-orange-300 hover:rounded hover:border-2 hover:shadow-lg hover:bg-orange-500" onclick="overhook();">跟随</span>
+
+                </li>
+                <div class="transition-all m-5"></div>
+                <li id="welcome" class="transition-all dark:text-gray-100 border-yellow-400 p-3  border-2 rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('welcome')">欢迎！向你介绍LauncherX</li>
+                    <div class="transition-all m-3"></div>
+                <li id="starter" class="transition-all  dark:text-gray-100 border-yellow-400 p-3  border-2 rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('starter')">1 入门</li>
+
+                <li id="get" class="transition-all dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('get')">2 获取游戏</li>
+
+                <li id="set" class="transition-all dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('set')">3 配置游戏</li>
+
+                <li id="customize" class="transition-all dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('customize')">4 个性化</li>
+
+                <li id="mang" class="transition-all dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('mang')">5 管理资源</li>
+
+                <li id="add" class="transition-all dark:text-gray-100 border-yellow-400 p-3  border-2 plat rounded font-semibold hover:rounded hover:border-2 hover:shadow-lg hover:bg-yellow-300 dark:hover:bg-yellow-500" 
+                onclick="ctar('add')">6 补充</li>
+                
+            </ul>
+            <div class="transition-all m-1"></div>
+            <div class="transition-all dark:text-gray-100 divider plat border-yellow-200 dark:border-yellow-500"></div>
+            <div class="transition-all m-1"></div>
+            <div class="transition-all dark:text-gray-100 border-yellow-200 dark:border-yellow-500 p-3  border-2 plat rounded acti">
+                <h3 class="transition-all font-semibold text-orange-500 dark:text-gray-100 mb-1">语言/Lang</h3>
+                <button class="transition-all button dark:text-gray-100 border-2 border-yellow-500 rounded px-0.5 m-0.5 text-orange-500">中文</button>
+                <button class="transition-all button dark:text-gray-100 border-2 border-yellow-500 rounded px-0.5 m-0.5">English</button>
+                <button class="transition-all button dark:text-gray-100 border-2 border-yellow-500 rounded px-0.5 m-0.5">-Русский</button>
+                <button class="transition-all button dark:text-gray-100 border-2 border-yellow-500 rounded px-0.5 m-0.5">-Español</button>
+                <button class="transition-all button dark:text-gray-100 border-2 border-yellow-500 rounded px-0.5 m-0.5">-日本語</button>
+            </div>
+            <div class="transition-all m-3"></div>
+            <div class="transition-all dark:text-gray-100 border-yellow-200 dark:border-yellow-500 p-3 border-2 plat rounded acti">
+                
+                <h3 class="transition-all dark:text-gray-100" style="font-size: small; border-bottom: 1px solid orangered; display: inline-block; margin-bottom: 0.3rem;">更新日志</h3>
+                <div class="transition-all screo overflow-auto max-h-20 scr overflow-x-clip">
+
+                    <p class="transition-all dark:text-gray-100"><span class="transition-all badge"></span>2022.06.06 - 测试测试
+                    <br>
+                    添加了语言切换按钮，将在未来适配。<br>添加了深色模式<br>优化了视觉体验<br>添加了阅读记录保存以及阅读位置标记。
+                    </p>
+
+                </div>
+                <div class="transition-all dark:text-gray-100 divider my-3 border-yellow-200 dark:border-yellow-500"></div>
+                
+                <p class="transition-all dark:text-gray-100">由Corona Studio以及社区成员呈现<br>由Vanilla HTML5 构建<br>由Tailwind CSS排版</p>
+            </div>
+        </div>
+
+        <div class="transition-all rightdisplay col-span-9 row-span-full col border-4 rounded border-yellow-200 p-7">
+
+            <iframe name="i" src="./content/welcome.html" style="overflow-y: auto;" id="control" height="100%" width="100%" 
+            class="transition-all transition-all inv dark:text-gray-100"></iframe>
+
+        <div style="overflow-y: auto;" id="cload" height="100%" width="100%" 
+            class="transition-all dark:text-gray-100 transition-all">
+            <div class="transition-all my-5"></div>
+            <div class="transition-all animate-spin my-3 mx-auto loader bg-gradient-to-r" viewBox="0 0 24 24"></div>
+            <h2 class="transition-all dark:text-gray-100 text-center font-semibold my-3" style="font-size: xx-large;">正在载入...</h2>
+        </div>
+                
+              
+        </div>
+        
+            <h5 class="transition-all dark:text-gray-100 text-center col col-span-12 border-4 border-yellow-300 rounded py-3"><a href="https://corona.studio/">日冕工作室(corona.studio)</a> GPL3.0<div class="transition-all splider"></div>没有备案号 (真的)<div class="transition-all splider"></div>前往<a href="https://github.com/Corona-Studio/LXIT">LauncherX错误追踪</a><div class="transition-all splider"></div>大菊为重！</h5>
+        <div class="transition-all my-6"></div>
+    </div>
+
+    <div class="transition-all my-12 text-orange-600"></div>
+</body>
+<script src="./srca/js/mainjs.js"></script>
+</html>

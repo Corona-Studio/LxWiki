@@ -1,0 +1,86 @@
+:root{
+    --yellowaw: rgb(255, 197, 23);
+    --ordinary: 0.45rem;
+    --owd: 0.6rem;
+    /* padding */
+}
+@import url(./allanim.css);
+@font-face {
+    font-family: nom;
+    src: url(./../../srca/font/lxgw.ttf);
+}
+
+*{
+    margin: 0.58rem 0;
+    padding: 0;
+    font-family: nom;
+}
+
+body{
+    margin: 0.1rem 1.8rem !important;
+    font-family: nom;
+
+}
+.dark{
+    color: rgb(255, 250, 245) !important;
+    /* aaaaaa! */
+}
+.fix{
+    display: block;
+    margin: 0.1rem auto !important;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size:3.1rem;
+    margin-bottom: 1.8rem;
+}
+h3{
+    border-left: var(--ordinary) solid var(--yellowaw);
+    padding-left: var(--owd);
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0.81rem;
+}
+h5{
+    border-left: var(--ordinary) var(--yellowaw) dashed;
+    margin-top: 0.8rem;
+    padding-left: var(--owd);
+    font-size: larger;
+    font-weight: bold;
+}
+p{
+    text-indent: 4ch;
+    font-size: large;
+    font-weight: bold;
+}
+h6{
+    border-left: var(--ordinary) dotted var(--yellowaw);
+    font-size: large;
+    padding-left: var(--owd);
+    margin-bottom: 0.2rem;
+}
+a:link{
+    color: var(--yellowaw);
+    text-decoration: none;
+}
+a:hover{
+    color:rgba(211, 147, 9, 0.815);
+    text-decoration: none;
+    border-bottom: 0.1rem solid var(--yellowaw);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+    transition: all .1s ease;
+}
+a:active{
+    text-decoration: none;
+    color: orangered;
+    border-bottom: 0.1rem solid var(--yellowaw);
+
+}
+a:visited{
+    color: orangered;
+    text-decoration: line-through var(--yellowaw);
+
+}

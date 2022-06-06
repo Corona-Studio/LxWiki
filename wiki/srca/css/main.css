@@ -1,0 +1,106 @@
+:root{
+    --yellowa: rgb(255, 197, 23) !important;
+}
+
+@import url(./allanim.css);
+*{
+    margin: 0;
+    padding: 0;
+    /* vertical-align: middle; */
+    
+    color: #111;
+}
+.transition-sl {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: .3s;
+}
+.inv{
+    display: none;
+}
+.blocki{
+    display: inline-block;
+}
+.parsee{
+    height: 5rem;
+}
+.spand{
+    margin-right: 1rem;
+}
+.plat{
+    margin-top: 0.5rem !important;
+}
+a:link{
+    color: var(--yellowa);
+    text-decoration: none;
+}
+a:hover{
+    color:rgba(211, 147, 9, 0.815);
+    text-decoration: none;
+    border-bottom: 0.1rem solid var(--yellowa);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+    transition: all .1s ease;
+}
+a:active{
+    text-decoration: none;
+    color: orangered;
+    border-bottom: 0.1rem solid var(--yellowa);
+
+}
+a:visited{
+    color: orangered;
+    text-decoration: line-through var(--yellowa);
+
+}
+
+.divider{
+    height: 1px;
+    border: 1px gray solid;
+    border-radius: 0.25rem;
+}
+.lighte{
+    background-color: rgb(255, 250, 245);
+}
+.darke{
+    background-color: rgb(49, 49, 38) !important;
+}
+.splider{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0.03rem;
+    border: var(--yellowa) solid 0.12rem;
+    border-radius: 25%;
+    background-color: var(--yellowa);
+    margin: auto 0.5rem;
+    margin-bottom: 0.2rem;
+    
+}
+.scr{
+    
+        width: 300px;
+        height: 100px;
+        overflow-y: scroll;
+        scrollbar-color: rgba(238, 199, 26, 0.87) rgb(207, 73, 33);
+        /* scrollbar-width:; */
+      
+}
+.aaa{
+    vertical-align: bottom !important;
+}
+.loader{
+    --col: rgba(238, 220, 59, 0.719);
+    --neg: #f3f3f3f3;
+    --arem: 3.3rem;
+    --brem: 0.5rem;
+    border:var(--brem) solid var(--col);
+    border-radius:50%;
+    border-right:var(--brem) solid var(--neg);
+    
+    width:var(--arem);
+    height:var(--arem);
+    /* animation-name:load; */
+    animation:load 2s linear infinite;
+}
