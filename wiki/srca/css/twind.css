@@ -526,6 +526,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   float: left;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-0\.5 {
+  margin: 0.125rem;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -669,6 +689,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(250 204 21 / var(--tw-border-opacity));
 }
 
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
+}
+
 .border-yellow-300 {
   --tw-border-opacity: 1;
   border-color: rgb(253 224 71 / var(--tw-border-opacity));
@@ -713,6 +738,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.75rem;
 }
 
+.px-0\.5 {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -731,9 +766,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
-.text-orange-600 {
+.text-orange-500 {
   --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
+  color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
 .transition-all {
