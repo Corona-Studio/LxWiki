@@ -10,17 +10,17 @@
     
     color: #111;
 }
+@font-face {
+    font-family: icn;
+    src: url(./../font/icomoon.ttf);
+}
+.vertical{
+    vertical-align: middle;
+}
 .transition-sl {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: .3s;
-}
-.screo{
-    overflow-x: clip;
-    overflow-y: auto;
-}
-div.screo{
-    width: inherit !important;
 }
 .inv{
     display: none;
@@ -30,6 +30,11 @@ div.screo{
 }
 .parsee{
     height: 5rem;
+}
+.ocu{
+    overflow-x: clip !important;
+    overflow-y:auto !important;
+    width: inherit !important;
 }
 .spand{
     margin-right: 1rem;
@@ -79,7 +84,7 @@ a:visited{
     vertical-align: middle;
     width: 0.03rem;
     border: var(--yellowa) solid 0.12rem;
-    border-radius: 25%;
+    border-radius: 12.5%;
     background-color: var(--yellowa);
     margin: auto 0.5rem;
     margin-bottom: 0.2rem;

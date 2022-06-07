@@ -6,6 +6,8 @@
     var dnr = "text-orange-600";
     var ddr = "dark:text-orange-600";
     var ars = "dark:text-gray-100";
+    var sun = document.getElementById('tenho');
+    var lun = document.getElementById('leuna');
     // var target = "welcome"
         function play(){
             
@@ -34,8 +36,7 @@
 
         kont.src = to;
         brplay();
-        setTimeout(function(){florem();},150);
-        
+        setTimeout(function(){florem();},150)
         play();
         
 
@@ -48,17 +49,9 @@
         }else ctar(localStorage.targo);
 
         lorem();
-        adw();
+
         play();
     }
-    function adw(){
-        if(localStorage.stadt == "act"){
-            
-        }else{
-            lorem();
-            localStorage.stadt = "act";
-        }
-    }//aaaaaaaa
 
     function lorem(){
         if(window.matchMedia('(prefers-color-scheme: dark)').matches){
@@ -114,7 +107,7 @@
     function lagdark(){
         document.documentElement.classList.add('dark');
         //localStorage.theme = 'light';
-
+        stm();
         setTimeout(function(){window.i.switcher(0);},640)
 
     }
@@ -122,7 +115,7 @@
     function laglight(){
         document.documentElement.classList.remove('dark');
         //localStorage.theme = 'dark';
-
+        mts();
         setTimeout(function(){window.i.switcher(1);},640)
 
     }
@@ -132,7 +125,7 @@
     function gdark(){
         document.documentElement.classList.add('dark');
         //localStorage.theme = 'light';
-
+        stm();
         window.i.switcher(0);
 
     }
@@ -140,7 +133,7 @@
     function glight(){
         document.documentElement.classList.remove('dark');
         //localStorage.theme = 'dark';
-
+        mts();
         window.i.switcher(1);
 
     }
@@ -162,13 +155,25 @@
         if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)){
             document.documentElement.classList.add('dark');
             window.i.switcher(0);
+            stm();
 
         }else {
             document.documentElement.classList.remove('dark');
             window.i.switcher(1);
+            mts();
 
         }
 
+    }
+
+    function stm(){
+        sun.classList.add('inv');
+        lun.classList.remove('inv');
+    }
+
+    function mts(){
+        lun.classList.add('inv');
+        sun.classList.remove('inv');
     }
     // function dmode(){
     //     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
